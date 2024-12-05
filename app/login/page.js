@@ -52,7 +52,7 @@ const router = useRouter();
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post(`http://localhost:3004/admin/events/login`, {
+      const response = await axios.post(`https://alfredbc.onrender.com/admin/events/login`, {
         email: email,
         password: password,
       });
@@ -93,7 +93,7 @@ const router = useRouter();
         id={style.navContainer}
         className="flex  justify-between w-[100vw] md:px-20 bg-[#F2EFEA] items-center fixed"
       >
-        <Link href={'http://localhost:3000/eventPage'} id={style.linksElement} className="text-lg py-6 px-4">
+        <Link href={'https://alfredbc.onrender.com/eventPage'} id={style.linksElement} className="text-lg py-6 px-4">
           {' '}
           Events
         </Link>
