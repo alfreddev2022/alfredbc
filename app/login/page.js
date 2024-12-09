@@ -52,7 +52,7 @@ const router = useRouter();
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post(`https://alfredbc.onrender.com/admin/events/login`, {
+      const response = await axios.post(`https://alfred-main.onrender.com/login`, {
         email: email,
         password: password,
       });
